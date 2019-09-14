@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Proxima Nova"
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main{
+    width:40%;
+    margin-top: 5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/*====HEADER SECTION STYLES====*/
+main header{
+    color: white;
+    font-size: .9rem;
+    padding: .6rem .8rem;
+    background: #4FB0F1;
+    border-radius: 10px 10px 0 0;
+}
+
+main header h1{
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*====SECTION element STYLES====*/
+section{
+    height: 400px;
+    background: #D0E5F3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+/*====CONTAINER SECTION STYLES====*/
+main .container{
+    width: 85%;
+    margin:3rem auto 0;
+}
+
+main .container:nth-child(2){
+    margin: 0 auto;
+}
+
+main .container:first-child p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #989898;
+    margin-bottom: .6rem;
+}
+
+main .container input{
+    display: block;
+    border: none;
+    padding: .4rem;
+    width: 70%;
+    color: #707070;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 6px rgb(160, 205, 235);
+}
+
+main .container button{
+    padding: .4rem .8rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    background: #4FB0F1;
+    border: none;
+    min-width: 30%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+main .container button:hover{
+    background: rgb(28, 140, 214);
+}
+
+main .container button:active{
+    transform: translate(2px, 3px)
+}
+
+/*NETWORK SECTION STYLES*/
+.provider{
+    background: #32B347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem .5rem;
+    display: none;
+}
+
+.provider p{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.error{
+    color: white;
+    background: #dd2351;
+}
+
+/*====MEDIA QUERIES*/
+@media screen and (max-width: 1000px){
+    main header{
+        font-size: .7rem;
+        padding: .6rem .8rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    main .container input, button{
+        width: 95%;
+        color: #707070;
+        font-size: 1.5rem;
+    }
+}
