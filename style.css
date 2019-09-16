@@ -101,18 +101,15 @@ main .container button:active{
 /*NETWORK SECTION STYLES*/
 .provider{
     background: #32B347;
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem .5rem;
     display: none;
-}
-
-.provider p{
     color: white;
     font-size: 1.7rem;
     font-weight: 500;
 }
+
 
 .error{
     color: white;
